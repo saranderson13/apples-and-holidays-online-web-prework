@@ -92,18 +92,18 @@ def all_supplies_in_holidays(holiday_hash)
     season[1].each do |holiday|
       formatted_holiday = holiday[0].to_s.split("_")
       formatted_holiday.collect do |word|
-        word.capitalize
+        word.capitalize!
       end
       formatted_holiday = formatted_holiday.join(" ")
       
       puts " #{formatted_holiday}: #{holiday[1]}"
       # example_format = "#{season[0].to_s.capitalize}: #{formatted_holiday}: #{holiday[1]}"
-      binding.pry
+      # binding.pry
     end
   end
 end
 
-all_supplies_in_holidays(holiday_hash)
+# all_supplies_in_holidays(holiday_hash)
 
 
 def all_holidays_with_bbq(holiday_hash)
