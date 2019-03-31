@@ -97,13 +97,9 @@ def all_supplies_in_holidays(holiday_hash)
       formatted_holiday = formatted_holiday.join(" ")
       
       puts "  #{formatted_holiday}: #{holiday[1].join(", ")}"
-      # example_format = "#{season[0].to_s.capitalize}: #{formatted_holiday}: #{holiday[1]}"
-      # binding.pry
     end
   end
 end
-
-# all_supplies_in_holidays(holiday_hash)
 
 
 def all_holidays_with_bbq(holiday_hash)
